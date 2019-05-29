@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="utf-8">
+  <title>你不知道的css</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div id="mask-codepen">
+    <iframe id="iframe-codepen"></iframe>
+    <div class="close">×</div>
+  </div>
+  <!-- Swiper -->
+  <div id="swiper-page" class="swiper-container swiper-container-h">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" data-hash="slide1">
+        <div>
+          <h1>你可能不知道的 CSS</h1>
+          <p>freeman 陈祥</p>
+        </div>
+      </div>
+      <div class="swiper-slide" data-hash="slide2">
+        <div id="swiper-selectors" class="swiper-container swiper-container-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <h1>选择器</h1>
+                <p><a target="_blank" href="http://www.w3school.com.cn/cssref/css_selectors.asp">w3school参考手册</a></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <h2>选择器权重</h2>
+                <p><a target="_blank" href="https://www.w3cplus.com/css/css-specificity-things-you-should-know.html">权重详解</a></p>
+                <button class="show-code" data-url="https://codepen.io/freemancx/pen/KLBgPM">查看代码</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <h2>伪元素</h2>
+                <button class="show-code" data-url="https://codepen.io/freemancx/pen/EzpvYb">查看代码</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <h2>空元素 & 唯一元素</h2>
+                <button class="show-code" data-url="https://codepen.io/freemancx/pen/gJjxgY">查看代码</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <h2>:nth-child()</h2>
+                <button class="show-code" data-url="https://codepen.io/freemancx/pen/GaBMPM">查看代码</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination swiper-pagination-v"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="swiper-slide" data-hash="slide3">
+        <div id="swiper-cssref" class="swiper-container swiper-container-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <h1>属性</h1>
+                <p><a target="_blank" href="http://www.w3school.com.cn/cssref/index.asp">w3school参考手册</a></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <h2>背景</h2>
+                <p><a target="_blank" href="http://www.w3school.com.cn/css3/css3_background.asp">css3背景新属性</a></p>
+                <button class="show-code" data-url="https://codepen.io/freemancx/pen/KLxVEq">查看代码</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <h2>列表-表格-轮廓-盒子模型</h2>
+                <button class="show-code" data-url="https://codepen.io/freemancx/pen/LoJZEZ">查看代码</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <h2>浮动 & 定位</h2>
+                <button class="show-code" data-url="https://codepen.io/freemancx/pen/dEqXRR">查看代码</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <h2>字体</h2>
+                <p><a target="_blank" href="http://font-spider.org/">字蛛：让网页自由引入中文字体成为可能</a></p>
+
+                <div class="code-preview">
+                  <pre>
+@font-face {
+  font-family: 'xiaofeng';
+  src: url('css/xiaofeng.woff') 
+  format('woff');
+}
+.f-fmy {
+  font-family: 'xiaofeng';
+}
+html {
+  font-size: 10px;
+}
+.f-size {
+  font-size: 20px;
+}
+.f-size0 {
+  font-size: 120%;
+}
+.f-size1 {
+  font-size: 1.2em;
+}
+.f-size2 {
+  font-size: 2.4rem;
+}
+.f-size3 {
+  font-size: smaller;
+}
+.f-size4 {
+  font-size: larger;
+}
+                        </pre>
+                  <style>
+                    @font-face {
+                      font-family: 'xiaofeng';
+                      src: url('css/xiaofeng.woff') format('woff');
+                    }
+
+                    .f-fmy {
+                      font-family: 'xiaofeng';
+                    }
+
+                    html {
+                      font-size: 10px;
+                    }
+
+                    .f-size {
+                      font-size: 20px;
+                    }
+
+                    .f-size0 {
+                      font-size: 120%;
+                    }
+
+                    .f-size1 {
+                      font-size: 1.2em;
+                    }
+
+                    .f-size2 {
+                      font-size: 2.4rem;
+                    }
+
+                    .f-size3 {
+                      font-size: smaller;
+                    }
+
+                    .f-size4 {
+                      font-size: larger;
+                    }
+                  </style>
+                  <pre id="code-html13"></pre>
+                  <script>
+                    document.getElementById('code-html13').innerText =
+                      `<p class="f-fmy">字蛛是一个中文字体</p>
+<div class="f-size">
+  <p>基准字体大小 20px</p>
+  <p class="f-size0">字体大小 120%</p>
+  <p class="f-size1">字体大小 1.2em</p>
+  <p class="f-size2">字体大小 2.4rem</p>
+  <p class="f-size3">字体大小 smaller</p>
+  <p class="f-size4">字体大小 larger</p>
+</div>
+<p>
+  小贴士：在安卓h5中，
+  字号为偶数且不可小于12px
+  才能正确计算出行高。
+</p>`;
+                  </script>
+
+                  <div class="preview">
+                    <p class="f-fmy">字蛛是一个中文字体</p>
+                    <br />
+                    <div class="f-size">
+                      <p>基准字体大小 20px</p>
+                      <br />
+                      <p class="f-size0">字体大小 120%</p>
+                      <p class="f-size1">字体大小 1.2em</p>
+                      <p class="f-size2">字体大小 2.4rem</p>
+                      <br />
+                      <p class="f-size3">字体大小 smaller</p>
+                      <p class="f-size4">字体大小 larger</p>
+                    </div>
+                    <br />
+                    <p>小贴士：在安卓h5中，字号为偶数且不可小于12px才能正确计算出行高。</p>
+                  </div>
+                </div>
+                <button class="show-code" data-url="https://codepen.io/freemancx/pen/OYoNwj">查看代码</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <h2>链接</h2>
+                <button class="show-code" data-url="https://codepen.io/freemancx/pen/gJdrqx">查看代码</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <h2>文本</h2>
+                <p><a target="_blank" href="https://www.cnblogs.com/starof/p/4512284.html?utm_source=tuicool&utm_medium=referral">vertical-align 详解</a></p>
+                <p><a target="_blank" href="https://www.cnblogs.com/chunyangji/p/5752642.html">text-shadow 详解</a></p>
+
+                <button class="show-code" data-url="https://codepen.io/freemancx/pen/byxpEq">查看代码</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <h2>flex</h2>
+                <p><a target="_blank" href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html">详细语法</a></p>
+                <button class="show-code" data-url="https://codepen.io/freemancx/pen/yWxPRL">查看代码</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <h2>多列 column</h2>
+                <button class="show-code" data-url="https://codepen.io/freemancx/pen/xNapaz">查看代码</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <h2>Grid</h2>
+                <p><a target="_blank" href="http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html">详解</a></p>
+                <p><a target="_blank" href="https://www.caniuse.com/#search=grid">can i use</a></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <h2>Transform + Animation</h2>
+                <button class="show-code" data-url="https://codepen.io/freemancx/pen/rgZJwq">查看代码</button>
+                
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <h2>Transform + Transition</h2>
+                
+              </div>
+            </div>
+            
+          </div>
+          <div class="swiper-pagination swiper-pagination-v"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="swiper-slide" data-hash="slide4">
+        <div id="swiper-other" class="swiper-container swiper-container-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <h1>其他</h1>
+              </div>
+            </div>
+            <div class="swiper-slide">
+
+            </div>
+            <div class="swiper-slide">
+
+            </div>
+            <div class="swiper-slide">
+
+            </div>
+            <div class="swiper-slide">
+
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-v"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-h"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var mask = document.getElementById('mask-codepen');
+    var iframe = document.getElementById('iframe-codepen');
+    document.querySelectorAll('.show-code').forEach(function (item) {
+      item.onclick = function (params) {
+        mask.style.display = 'block';
+        iframe.src = this.getAttribute('data-url');
+      }
+    });
+
+    document.querySelector('#mask-codepen .close').onclick = function (params) {
+      mask.style.display = 'none';
+    }
+
+    var swiperH = new Swiper('#swiper-page', {
+      spaceBetween: 50,
+      keyboard: true,
+      simulateTouch: false,//禁止鼠标模拟
+      hashNavigation: {
+        watchState: true,
+      },
+      pagination: {
+        el: '#swiper-page>.swiper-pagination-h',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '#swiper-page>.swiper-button-next',
+        prevEl: '#swiper-page>.swiper-button-prev',
+      },
+    });
+
+    var swiperV1 = new Swiper('#swiper-selectors', {
+      direction: 'vertical',
+      spaceBetween: 50,
+      keyboard: true,
+      simulateTouch: false,//禁止鼠标模拟
+      pagination: {
+        el: '#swiper-selectors .swiper-pagination-v',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '#swiper-selectors .swiper-button-next',
+        prevEl: '#swiper-selectors .swiper-button-prev',
+      },
+    });
+
+    var swiperV2 = new Swiper('#swiper-cssref', {
+      direction: 'vertical',
+      spaceBetween: 50,
+      keyboard: true,
+      simulateTouch: false,//禁止鼠标模拟
+      pagination: {
+        el: '#swiper-cssref .swiper-pagination-v',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '#swiper-cssref .swiper-button-next',
+        prevEl: '#swiper-cssref .swiper-button-prev',
+      },
+    });
+
+    var swiperV3 = new Swiper('#swiper-other', {
+      direction: 'vertical',
+      spaceBetween: 50,
+      keyboard: true,
+      simulateTouch: false,//禁止鼠标模拟
+      pagination: {
+        el: '#swiper-other .swiper-pagination-v',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '#swiper-other .swiper-button-next',
+        prevEl: '#swiper-other .swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #3f3f3f;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #4398ed;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-container-v {}
+
+.swiper-container-h .swiper-button-next {
+  top: auto;
+  bottom: 80px;
+  right: 20px;
+}
+
+.swiper-container-h .swiper-button-prev {
+  top: auto;
+  bottom: 80px;
+  left: auto;
+  right: 120px;
+}
+
+.swiper-container-v .swiper-button-next {
+  top: auto;
+  bottom: 30px;
+  left: auto;
+  right: 70px;
+  transform: rotate(90deg);
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0.05;
+}
+
+.swiper-container-v .swiper-button-prev {
+  transform: rotate(90deg);
+  top: auto;
+  bottom: 130px;
+  left: auto;
+  right: 70px;
+}
+
+.code-preview {
+  display: flex;
+  width: 1000px;
+  margin-top: 10px;
+}
+
+.code-preview pre {
+  flex: 1;
+  text-align: left;
+  background: #efefef;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.code-preview pre:first-child {
+  background: #e5e5e5;
+}
+
+.code-preview .preview {
+  flex: 1;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+}
+
+#mask-codepen {
+  z-index: 100;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+#mask-codepen iframe {
+  display: block;
+  width: 1200px;
+  height: 800px;
+  border: 0;
+  padding-top: 70px;
+  margin: 0 auto;
+}
+
+#mask-codepen .close{
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  top: 20px;
+  font-size: 40px;
+  line-height: 33px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
