@@ -251,17 +251,18 @@ html {
             <div class="swiper-slide">
               <div>
                 <h2>Transform + Animation</h2>
+                <p><a target="_blank" href="https://daneden.github.io/animate.css/">Animate.css动画库</a></p>
+                <p><a target="_blank" href="https://cssanimate.com/">可视化动画，自动生成代码</a></p>
                 <button class="show-code" data-url="https://codepen.io/freemancx/pen/rgZJwq">查看代码</button>
-                
               </div>
             </div>
             <div class="swiper-slide">
               <div>
                 <h2>Transform + Transition</h2>
-                
+                <button class="show-code" data-url="https://codepen.io/freemancx/pen/xNajoy">查看代码</button>
               </div>
             </div>
-            
+
           </div>
           <div class="swiper-pagination swiper-pagination-v"></div>
           <div class="swiper-button-prev"></div>
@@ -277,16 +278,26 @@ html {
               </div>
             </div>
             <div class="swiper-slide">
-
+              <div>
+                <h2>H5超级兼容方案</h2>
+                <p>meta标签定宽 + css媒体查询 + px2rem</p>
+                <p>https://pdd.ke.com</p>
+              </div>
             </div>
             <div class="swiper-slide">
-
+              <div>
+                <h2>一些小工具</h2>
+                <p><a target="_blank" href="http://alloyteam.github.io/AlloyPhoto/">前端处理图片</a></p>
+                <p><a target="_blank" href="https://www.zhangxinxu.com/wordpress/2011/11/css3-prefixfree-js-animatable/">自动补全前缀</a></p>
+                <p><a target="_blank" href="http://www.17sucai.com/pins/tag/3886.html">canvas 素材库</a></p>
+              </div>
             </div>
             <div class="swiper-slide">
-
-            </div>
-            <div class="swiper-slide">
-
+              <div>
+                <h2>THANKS</h2>
+                <p>如果你有更多的想法</p>
+                <p><a target="_blank" href="https://github.com/freemancx/dontknowcss">欢迎提issues</a></p>
+              </div>
             </div>
           </div>
           <div class="swiper-pagination swiper-pagination-v"></div>
@@ -307,12 +318,22 @@ html {
 
   <!-- Initialize Swiper -->
   <script>
+    document.querySelectorAll(".demo button").forEach(function (item) {
+      item.onclick = function (params) {
+        var index = this.innerHTML;
+        alert(index);
+      };
+    });
+
+
+
     var mask = document.getElementById('mask-codepen');
     var iframe = document.getElementById('iframe-codepen');
     document.querySelectorAll('.show-code').forEach(function (item) {
       item.onclick = function (params) {
         mask.style.display = 'block';
         iframe.src = this.getAttribute('data-url');
+
       }
     });
 
