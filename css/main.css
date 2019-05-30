@@ -130,7 +130,7 @@ a {
 #mask-codepen .close {
   position: absolute;
   color: #fff;
-  right: 30px;
+  right: 20px;
   top: 20px;
   font-size: 40px;
   line-height: 33px;
@@ -144,7 +144,7 @@ a {
 }
 
 .git-link {
-  z-index: 100;
+  z-index: 99;
   position: fixed;
   top: 0;
   right: 0;
