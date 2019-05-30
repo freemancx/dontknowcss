@@ -127,7 +127,7 @@ a {
   margin: 0 auto;
 }
 
-#mask-codepen .close{
+#mask-codepen .close {
   position: absolute;
   color: #fff;
   right: 30px;
@@ -141,4 +141,20 @@ a {
   cursor: pointer;
   border: 2px solid #fff;
   border-radius: 50%;
+}
+
+.git-link {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 0;
+  height: 149px;
+  width: 149px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  background-image: url(http://images2015.cnblogs.com/blog/459873/201603/459873-20160317090540131-1089895320.png);
 }

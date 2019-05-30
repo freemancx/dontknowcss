@@ -18,9 +18,24 @@
   <div id="swiper-page" class="swiper-container swiper-container-h">
     <div class="swiper-wrapper">
       <div class="swiper-slide" data-hash="slide1">
-        <div>
-          <h1>你可能不知道的 CSS</h1>
-          <p>freeman 陈祥</p>
+        <div id="swiper-title" class="swiper-container swiper-container-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <h1>你可能不知道的 CSS</h1>
+                <p>freeman 陈祥</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <p>1、没有最好的方案，只有最合适的方案</p>
+                <p>2、如果确实有你不知道的用法，欢迎star</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-v"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
       <div class="swiper-slide" data-hash="slide2">
@@ -294,7 +309,7 @@ html {
               <div>
                 <h2>THANKS</h2>
                 <p>如果你有更多的想法</p>
-                <p><a target="_blank" href="https://github.com/freemancx/dontknowcss">欢迎提issues</a></p>
+                <p><a target="_blank" href="https://github.com/freemancx/dontknowcss/issues">欢迎提issues</a></p>
               </div>
             </div>
           </div>
@@ -310,31 +325,20 @@ html {
     <div class="swiper-button-next"></div>
   </div>
 
+  <a class="git-link" href="https://github.com/freemancx/dontknowcss" target="_blank"></a>
+
   <!-- Swiper JS -->
   <script src="js/swiper.min.js"></script>
   <script src="js/prefixfree.min.js"></script>
-
-  <!-- Initialize Swiper -->
   <script>
-    document.querySelectorAll(".demo button").forEach(function (item) {
-      item.onclick = function (params) {
-        var index = this.innerHTML;
-        alert(index);
-      };
-    });
-
-
-
     var mask = document.getElementById('mask-codepen');
     var iframe = document.getElementById('iframe-codepen');
     document.querySelectorAll('.show-code').forEach(function (item) {
       item.onclick = function (params) {
         mask.style.display = 'block';
         iframe.src = this.getAttribute('data-url');
-
       }
     });
-
     document.querySelector('#mask-codepen .close').onclick = function (params) {
       mask.style.display = 'none';
     }
@@ -353,6 +357,22 @@ html {
       navigation: {
         nextEl: '#swiper-page>.swiper-button-next',
         prevEl: '#swiper-page>.swiper-button-prev',
+      },
+    });
+
+
+    var swiperV0 = new Swiper('#swiper-title', {
+      direction: 'vertical',
+      spaceBetween: 50,
+      keyboard: true,
+      simulateTouch: false,//禁止鼠标模拟
+      pagination: {
+        el: '#swiper-title .swiper-pagination-v',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '#swiper-title .swiper-button-next',
+        prevEl: '#swiper-title .swiper-button-prev',
       },
     });
 
