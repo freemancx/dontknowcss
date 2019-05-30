@@ -149,12 +149,10 @@ a {
   top: 0;
   right: 0;
   border: 0;
-  height: 149px;
-  width: 149px;
+  height: 120px;
+  width: 120px;
+  background-size: 100%;
+  
   transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  background-image: url(http://images2015.cnblogs.com/blog/459873/201603/459873-20160317090540131-1089895320.png);
+  background-image: url(../img/git.png);
 }
